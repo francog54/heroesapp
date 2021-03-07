@@ -19,8 +19,8 @@ export const AppRouter = () => {
         <Router>
             <div>
                 <Switch>
-                    <PublicRoute exact path="./login" component={ LoginScreen } isAuthenticated= { user.logged }/>
-                    <PrivateRoute path="./" component={ DashboardRoutes } isAuthenticated= { user.logged } />
+                    <PublicRoute exact path="/login" component={ LoginScreen } isAuthenticated= { user.logged }/>
+                    <PrivateRoute path="/" component={ DashboardRoutes } isAuthenticated= { user.logged } />
                 </Switch>
             </div>
         </Router>
